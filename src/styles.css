@@ -20,9 +20,7 @@ body {
 }
 
 #current-location-button {
-  border-radius: 5px;
-  padding: 4px;
   text-align: right;
-  margin-top: 15px;
-  margin-left: 375px;
+  margin-top: 10px;
+  margin-left: 374px;
 }
