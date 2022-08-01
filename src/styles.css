@@ -3,7 +3,7 @@ body {
   background: #89b2d3;
 }
 .container {
-  position: fixed;
+  position: relative;
   text-align: center;
   left: 20px;
   right: 20px;
