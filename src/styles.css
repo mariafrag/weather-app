@@ -19,11 +19,10 @@ body {
   padding: 5px;
 }
 
-#current-location-button:hover {
+#current-location-button {
   text-align: right;
   margin-top: 10px;
   margin-left: 374px;
   background: #a2c11c;
   border-color: #a2c11c;
-  background: #8ea819;
 }
