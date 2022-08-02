@@ -19,7 +19,7 @@ body {
   padding: 5px;
 }
 
-#current-location-button {
+#current-location-button:hover {
   text-align: right;
   margin-top: 10px;
   margin-left: 374px;
