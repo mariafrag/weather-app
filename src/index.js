@@ -79,8 +79,20 @@ function displayWeatherCondition(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   celciousTemperature = response.data.main.temp;
-
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   getForecast(response.data.coord);
+}
+
+function changeForecastSlogan() {
+  let forecastSlogan = document.querySelector("#slogan");
+
+  if (response.data.main.temp >= 25) {
+    forecastSlogan.innerHTML =
+      "Don't forget your sunglasses and to hydrate yourself!🕶️🥤";
+  } else {
+    forecastSlogan.innerHTML = "Don't forget to wear something warm!🧥🧣";
+  }
 }
 
 function convertToFahrenheit(event) {
