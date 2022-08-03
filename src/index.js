@@ -20,6 +20,29 @@ let days = [
 let day = days[now.getDay()];
 time.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHMTL = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHMTL =
+      forecastHMTL +
+      `
+            <div class="col">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                src="https://openweathermap.org/img/wn/03d@2x.png"
+                alt=""
+                width="36"
+              />
+              <div class="weather-forecast-temp">31°</div>
+            </div>
+            `;
+  });
+  forecastHMTL = forecastHMTL + `</div>`;
+  forecastElement.innerHTML = forecastHMTL;
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   celciousTemperature = response.data.main.temp;
@@ -84,4 +107,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
 searchCity("Athens");
+
+displayForecast();

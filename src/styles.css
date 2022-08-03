@@ -27,6 +27,9 @@ body {
   border-color: #a2c11c;
 }
 
+h2 {
+  opacity: 0.6;
+}
 .weather-forecast {
   margin: 20px;
   text-align: center;
