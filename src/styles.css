@@ -26,6 +26,9 @@ body {
   background: #a2c11c;
   border-color: #a2c11c;
 }
+#current-location-button:hover {
+  background: #92ad1a;
+}
 
 h2 {
   opacity: 0.6;
