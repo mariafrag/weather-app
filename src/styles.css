@@ -26,6 +26,17 @@ body {
   background: #a2c11c;
   border-color: #a2c11c;
 }
-form control btn btn-primary current: :hover {
-  background: #819915;
+
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  color: #1c5f77;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.weather-forecast-temp {
+  font-size: 14px;
 }
