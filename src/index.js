@@ -84,17 +84,6 @@ function displayWeatherCondition(response) {
   getForecast(response.data.coord);
 }
 
-function changeForecastSlogan() {
-  let forecastSlogan = document.querySelector("#slogan");
-
-  if (response.data.main.temp >= 25) {
-    forecastSlogan.innerHTML =
-      "Don't forget your sunglasses and to hydrate yourself!🕶️🥤";
-  } else {
-    forecastSlogan.innerHTML = "Don't forget to wear something warm!🧥🧣";
-  }
-}
-
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
